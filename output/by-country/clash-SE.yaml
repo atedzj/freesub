@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  server: 79.141.174.147
+  server: 193.42.39.10
   port: 33743
   udp: true
   type: vless
@@ -19,20 +19,6 @@ proxies:
   grpc-opts:
     grpc-service-name: TunService
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  server: 91.193.17.156
-  port: 9458
-  udp: true
-  type: vless
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-  tls: true
-  reality-opts:
-    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
-  servername: www.google.com
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   server: 143.246.194.60
   port: 8081
   udp: true
@@ -41,7 +27,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-test
-- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
+- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   server: 143.246.195.138
   port: 8081
   udp: true
@@ -50,7 +36,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-test
-- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   server: se-node.rumedia-cdn.com
   port: 25443
   udp: true
@@ -58,21 +44,29 @@ proxies:
   password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
   sni: cf2.rumedia-cdn.com
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
-  server: 202.181.177.8
-  port: 8443
+- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+  server: 34.51.231.250
+  port: 443
   udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: e4be912f-68e8-4d51-80a4-1342b646f8e0
   tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
+  reality-opts:
+    public-key: fV003yDr_sb_Wkgz6MxnIUJMgD15osWhzU-HZ5fLPFg
+    short-id: 79ff7d51e3c56323
+  servername: www.cloudflare.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /channels/act
-    headers:
-      Host: cdn8848.776676.xyz
+- name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+  server: newswedengrrrr.azadfug.ir
+  port: 7005
+  udp: true
+  type: vless
+  uuid: ac64aec6-85ee-4fc7-b34b-60a7bcf236ec
+  tls: true
+  reality-opts:
+    public-key: 7aICTN0hv6bhd8bYOjNZniDYSXgD20LunZ3BW6_Zyk4
+  servername: play.googleapis.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
