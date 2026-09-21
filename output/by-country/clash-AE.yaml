@@ -9,7 +9,7 @@ proxies:
   port: 8443
   udp: true
   type: vless
-  uuid: ce57910d-b7a9-4eaa-9a94-a1dda0d08026
+  uuid: 5b0aa819-e4e8-4caa-9b5f-779205c82849
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -23,7 +23,7 @@ proxies:
   type: hysteria2
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
   sni: hy2.aspidnet.xyz
-  skip-cert-verify: true
+  skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
@@ -48,6 +48,17 @@ proxies:
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
+  server: 84.235.244.108
+  port: 22573
+  udp: true
+  type: vless
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
   server: 146.70.102.82
   port: 443
   udp: true
@@ -60,17 +71,6 @@ proxies:
     short-id: 002fb4ec7b3088cc
   servername: www.datadoghq.com
   client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
-  server: uae.unixzone.us
-  port: 22573
-  udp: true
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
