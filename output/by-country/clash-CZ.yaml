@@ -5,39 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 153.76.185.189
-  port: 3090
-  udp: true
-  type: vless
-  uuid: 5ebdc9ee-8b41-4487-93af-231cb0b47d60
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: 153.76.185.188
-  port: 3090
-  udp: true
-  type: vless
-  uuid: 9912a5ca-3ee1-45ac-b182-46fec2610ee0
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
-  server: 138.68.142.165
+  server: restless-moon-dd68ridam-too-in-mamlekat.hgtghff67tdfhut3.workers.dev
   port: 2053
   udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: dc1e9f00-c064-4870-9bfc-463db50257d7
   tls: true
-  servername: cdn8848.776676.xyz
+  servername: restless-moon-dd68ridam-too-in-mamlekat.hgtghff67tdfhut3.workers.dev
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /resource/channel?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇨🇿 捷克 (Czech) 04 - xiaohe
+    path: /eyJqdW5rIjoicVkwaG9XUUQyUDhzRkZ5UiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
   server: 95.85.230.35
   port: 443
   udp: true
@@ -56,8 +35,6 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
-  - 🇨🇿 捷克 (Czech) 03 - xiaohe
-  - 🇨🇿 捷克 (Czech) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -65,7 +42,5 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
-  - 🇨🇿 捷克 (Czech) 03 - xiaohe
-  - 🇨🇿 捷克 (Czech) 04 - xiaohe
 rules:
 - MATCH,PROXIES
