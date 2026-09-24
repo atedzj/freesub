@@ -6,7 +6,7 @@
     {
       "type": "vmess",
       "tag": "🇪🇸 西班牙 (Spain) 01 - xiaohe",
-      "server": "66.163.118.73",
+      "server": "85.90.217.42",
       "server_port": 22324,
       "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
       "security": "auto"
@@ -14,7 +14,7 @@
     {
       "type": "vmess",
       "tag": "🇪🇸 西班牙 (Spain) 02 - xiaohe",
-      "server": "85.90.217.42",
+      "server": "66.163.118.73",
       "server_port": 22324,
       "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
       "security": "auto"
@@ -38,7 +38,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -88,7 +88,7 @@
         "server_name": "www.samsung.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
@@ -109,7 +109,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
@@ -132,7 +132,10 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/linkvws"
+        "path": "/linkvws",
+        "headers": {
+          "Host": "mygptagent.org"
+        }
       }
     },
     {
