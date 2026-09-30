@@ -19,13 +19,18 @@ proxies:
   grpc-opts:
     grpc-service-name: grpc
 - name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: zfd-boardv2.kunlun01dns.com
-  port: 16280
+  server: 195.133.66.229
+  port: 8443
   udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 4abdfe42-aec7-4b66-974d-3f891e2e8184
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: j97RCvxVfMu5XWcXuAc4s8TnBTdl8PQrNFrZDQpAkng
+    short-id: b415b8d7a6106ace
+  servername: nlll.gaz-service.shop
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
