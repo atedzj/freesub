@@ -12,11 +12,7 @@
       "tls": {
         "enabled": true,
         "server_name": "trackydev.site",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        }
+        "insecure": false
       },
       "transport": {
         "type": "ws",
@@ -33,8 +29,7 @@
       "server_port": 80,
       "uuid": "684f9a2e-4f96-497f-bfd9-ff1e34637952",
       "transport": {
-        "type": "ws",
-        "path": "/"
+        "type": "ws"
       }
     },
     {
